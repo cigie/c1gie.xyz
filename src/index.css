@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Akshar", sans-serif;
+  color: white;
+  background: #252525;
+  position: relative;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 5vw;
+}
+.blue {
+  background: blue;
+}
+.red {
+  background: #ff0000;
+}
+.pink {
+  background: #ff006a;
+}
+.dark {
+  background: #000000;
+}
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #252525;
+  transform: translate(85%, 60%);
+}
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: blue;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 191px;
+}
+.flip {
+  transform: rotate(180deg);
+}
+.spacer {
+  aspect-ratio: 960/330;
+  width: 100;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer1 {
+  background-image: url(img/wav.svg);
+}
+.layer2 {
+  background-image: url(img/waving.svg);
+}
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+  z-index: 0;
+}
+
+.blob-content {
+  z-index: 1;
+}
