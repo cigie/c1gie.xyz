@@ -1,4 +1,4 @@
-<h1 align="center"> c1gie.xyz General purpose Website</h1>
+<h1 align="center"> <a href="https://www.c1gie.xyz/" align="center" target="_blank">C1gie.xyz</a> General purpose Website</h1>
 
 <p align="center">
 - Made for the purspose of testing and learning new web development skills<br>
