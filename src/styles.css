@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   padding: 0;
@@ -5,22 +6,15 @@ body {
   color: white;
   background: #252525;
   position: relative;
-}
-html,
-body {
   overflow-x: hidden;
 }
 
 h1 {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
   font-size: 3em;
-}
-
-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 400px;
-  padding: 100px 5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
