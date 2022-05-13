@@ -1,18 +1,10 @@
-if (
-  localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: "#navbar",
+});
 
-// Whenever the user explicitly chooses light mode
-localStorage.theme = "light";
-
-// Whenever the user explicitly chooses dark mode
-localStorage.theme = "dark";
-
-// Whenever the user explicitly chooses to respect the OS preference
-localStorage.removeItem("theme");
+var dataSpyList = [].slice.call(
+  document.querySelectorAll('[data-bs-spy="scroll"]')
+);
+dataSpyList.forEach(function (dataSpyEl) {
+  bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
+});

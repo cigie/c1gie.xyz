@@ -18,37 +18,86 @@
     <title>Coming Soon...</title>
   </head>
   <body>
-    <nav class="navbar sticky-md-top navbar-dark">
+    <nav id="navbar" class="navbar sticky-md-top navbar-dark">
       <div class="container-fluid">
-        <ul class="navbar-nav d-flex flex-row nav-fill mx-auto" id="navbarNav">
-          <li class="nav-item p-2">
+        <ul
+          class="navbar-nav d-inline-flex justify-content-evenly flex-row nav-fill mx-auto"
+          id="navbarNav"
+        >
+          <li class="nav-item flex-fill p-2">
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item p-2">
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item flex-fill p-2">
+            <a class="nav-link" href="#about">About</a>
           </li>
-
-          <li class="nav-item p-2">
-            <a class="nav-link" href="#">Contact</a>
+          <li class="nav-item flex-fill p-2">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
+        </ul>
+        <ul
+          class="navbar-nav d-inline-flex flex-row nav-fill mx-auto"
+          id="navbarNav"
+        >
           <li class="nav-item p-2">
-            <a class="nav-link" href="https://GitHub.com/cigie"
-              ><i class="bi-github" role="img" aria-label="GitHub"></i
+            <a
+              class="nav-link"
+              href="https://twitter.com/fattycigs"
+              target="_blank"
+              ><i class="bi-twitter" role="img" aria-label="Twitter"></i
             ></a>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link" href="https://GitHub.com/cigie"
-              ><i class="bi-twitter" role="img" aria-label="Twitter"></i
+            <a class="nav-link" href="https://GitHub.com/cigie" target="_blank"
+              ><i class="bi-github" role="img" aria-label="GitHub"></i
             ></a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <section></section>
-      <section></section>
-      <section></section>
+    <div
+      class="container-fluid"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <div>
+        <h1 id="home">Hello! Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+          quod cumque voluptatibus similique ea quae. Soluta, natus eaque
+          deleniti nostrum magni totam. Eum sunt adipisci nisi, voluptatum
+          dolore iusto quisquam.
+        </p>
+      </div>
+      <div>
+        <h1 id="about">Second heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          eveniet nemo distinctio magnam quisquam laboriosam expedita blanditiis
+          cumque dolor enim vitae quo saepe voluptate dignissimos, dolorem
+          soluta, temporibus fuga maxime.
+        </p>
+      </div>
+      <div>
+        <h1 id="contact">Third heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et veniam
+          quod fugiat hic tenetur distinctio praesentium, repudiandae tempora
+          fuga vero voluptates numquam pariatur labore unde mollitia magnam quam
+          nulla voluptate!
+        </p>
+      </div>
+      <div>
+        <h1 id="FAQ">Fourth heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+          laudantium, est ad cumque perspiciatis, a qui animi, iure nulla amet
+          eum esse recusandae ab! A sapiente deleniti assumenda nobis dolorem?
+        </p>
+      </div>
     </div>
 
     <script

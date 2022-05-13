@@ -18,17 +18,21 @@ html,
 body {
   padding: 0;
   margin: 0;
-  display: relative;
+  position: relative;
   overflow-x: hidden;
   font-family: biotif;
   font-size: 1.1em;
   background-color: var(--bg2);
+  color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   text-decoration: none !important;
   color: white !important;
-  background-color: var(--bg2) !important;
+  background-color: var(--bg) !important;
+}
+
+#navbar {
 }
 
 :root {
@@ -36,4 +40,27 @@ body {
   --bg2-acent: #191919;
   --bg-colour: #151414;
   --bg-acent: #101011;
+}
+
+#home {
+  margin: 0;
+  letter-spacing: -1.5px;
+  font-size: 3.5em;
+  font-family: bogart;
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  letter-spacing: -1.5px;
+  font-size: 2em;
+  font-family: bogart;
 }
