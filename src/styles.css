@@ -20,12 +20,13 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: biotif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   background-color: var(--bg2);
   color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
+  text-align: center;
   text-decoration: none !important;
   color: white !important;
   background-color: var(--bg) !important;
